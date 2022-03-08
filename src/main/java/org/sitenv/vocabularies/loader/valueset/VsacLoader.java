@@ -1,6 +1,14 @@
 package org.sitenv.vocabularies.loader.valueset;
 
-import com.monitorjbl.xlsx.StreamingReader;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.util.List;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.apache.poi.ss.usermodel.Row;
@@ -10,14 +18,7 @@ import org.sitenv.vocabularies.loader.BaseCodeLoader;
 import org.sitenv.vocabularies.loader.VocabularyLoader;
 import org.springframework.stereotype.Component;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
-import java.util.List;
+import com.monitorjbl.xlsx.StreamingReader;
 
 @Component(value = "VSAC")
 public class VsacLoader extends BaseCodeLoader implements VocabularyLoader {

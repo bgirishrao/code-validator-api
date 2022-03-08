@@ -1,7 +1,17 @@
 package org.sitenv.vocabularies.validation.validators.nodetypes;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+import javax.xml.xpath.XPath;
+import javax.xml.xpath.XPathConstants;
+import javax.xml.xpath.XPathExpression;
+import javax.xml.xpath.XPathExpressionException;
+
 import org.apache.commons.lang3.StringUtils;
-import org.apache.logging.log4j.Logger; import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.sitenv.vocabularies.configuration.ConfiguredValidationResultSeverityLevel;
 import org.sitenv.vocabularies.configuration.ConfiguredValidator;
 import org.sitenv.vocabularies.validation.dto.NodeValidationResult;
@@ -13,14 +23,6 @@ import org.sitenv.vocabularies.validation.validators.NodeValidator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.w3c.dom.Node;
-
-import javax.xml.xpath.XPath;
-import javax.xml.xpath.XPathConstants;
-import javax.xml.xpath.XPathExpression;
-import javax.xml.xpath.XPathExpressionException;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 
 @Component(value = "LanguageCodeNodeCountryCodeValuesetValidator")
 public class LanguageCodeNodeCountryCodeValuesetValidator extends NodeValidator {

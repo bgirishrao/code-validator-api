@@ -1,9 +1,5 @@
 package org.sitenv.vocabularies.loader.code;
 
-import org.apache.commons.lang3.text.StrBuilder;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -11,6 +7,10 @@ import java.io.IOException;
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.List;
+
+import org.apache.commons.lang3.text.StrBuilder;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 /**
  * Created by Brian on 2/7/2016.

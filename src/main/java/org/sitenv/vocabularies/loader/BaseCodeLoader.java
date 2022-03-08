@@ -1,11 +1,11 @@
 package org.sitenv.vocabularies.loader;
 
-import org.apache.commons.lang3.StringUtils;
-import org.apache.commons.lang3.text.StrBuilder;
-
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
+
+import org.apache.commons.lang3.StringUtils;
+import org.apache.commons.lang3.text.StrBuilder;
 
 /**
  * Created by Brian on 2/6/2016.

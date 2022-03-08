@@ -1,14 +1,14 @@
 package org.sitenv.vocabularies.configuration;
 
-import org.sitenv.vocabularies.constants.VocabularyConstants;
-import org.springframework.beans.factory.InitializingBean;
-import org.springframework.oxm.Unmarshaller;
-
-import javax.xml.transform.stream.StreamSource;
-
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+
+import javax.xml.transform.stream.StreamSource;
+
+import org.sitenv.vocabularies.constants.VocabularyConstants;
+import org.springframework.beans.factory.InitializingBean;
+import org.springframework.oxm.Unmarshaller;
 
 /**
  * Created by Brian on 2/10/2016.

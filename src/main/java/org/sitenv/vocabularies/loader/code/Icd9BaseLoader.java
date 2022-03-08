@@ -1,9 +1,6 @@
 package org.sitenv.vocabularies.loader.code;
 
-import org.apache.commons.lang3.text.StrBuilder;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-import org.sitenv.vocabularies.loader.BaseCodeLoader;
+import static org.sitenv.vocabularies.loader.code.IcdLoader.buildDelimitedIcdCode;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -13,7 +10,10 @@ import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.List;
 
-import static org.sitenv.vocabularies.loader.code.IcdLoader.buildDelimitedIcdCode;
+import org.apache.commons.lang3.text.StrBuilder;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.sitenv.vocabularies.loader.BaseCodeLoader;
 
 /**
  * Created by Brian on 2/7/2016.

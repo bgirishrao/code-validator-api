@@ -1,10 +1,11 @@
 package org.sitenv.vocabularies.configuration;
 
+import java.util.List;
+
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
-import java.util.List;
 
 /**
  * Created by Brian on 2/10/2016.

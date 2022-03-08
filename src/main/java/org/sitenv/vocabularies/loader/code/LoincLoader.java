@@ -2,7 +2,8 @@ package org.sitenv.vocabularies.loader.code;
 
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.text.StrBuilder;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.sitenv.vocabularies.loader.BaseCodeLoader;
 import org.sitenv.vocabularies.loader.VocabularyLoader;
 import org.springframework.stereotype.Component;
@@ -20,7 +21,7 @@ import java.util.List;
  */
 @Component(value = "LOINC")
 public class LoincLoader extends BaseCodeLoader implements VocabularyLoader {
-    private static Logger logger = Logger.getLogger(LoincLoader.class);
+    private static Logger logger = LogManager.getLogger(LoincLoader.class);
     private static final String ACTIVE_CODE = "ACTIVE";
     private static final String STATUS_ROW_HEADER_VALUE = "STATUS";
     private static final int CODE_INDEX = 0;

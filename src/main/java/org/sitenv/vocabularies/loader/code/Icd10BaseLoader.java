@@ -1,7 +1,8 @@
 package org.sitenv.vocabularies.loader.code;
 
 import org.apache.commons.lang3.text.StrBuilder;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -15,7 +16,7 @@ import java.util.List;
  * Created by Brian on 2/7/2016.
  */
 public abstract class Icd10BaseLoader extends IcdLoader {
-    private static Logger logger = Logger.getLogger(Icd10BaseLoader.class);
+    private static Logger logger = LogManager.getLogger(Icd10BaseLoader.class);
     protected String oid;
 
     @Override

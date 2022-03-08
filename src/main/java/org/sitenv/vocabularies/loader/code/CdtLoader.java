@@ -1,7 +1,9 @@
 package org.sitenv.vocabularies.loader.code;
 
 import org.apache.commons.lang3.text.StrBuilder;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+//import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.Logger;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
@@ -21,7 +23,8 @@ import java.util.List;
 
 @Component(value = "CDT")
     public class CdtLoader extends BaseCodeLoader {
-    private static Logger logger = Logger.getLogger(CdtLoader.class);
+//    private static Logger logger = LogManager.getLogger(CdtLoader.class);
+	private static Logger logger = LogManager.getLogger(CdtLoader.class);
     private final String INVALID_CODE_ENTRY = "99";
     private static final String HEADER_ROW_FINDER_KEY = "CODE";
     private static final int MIN_EXPECTED_NUMBER_OF_CELLS_IN_ROW = 6;

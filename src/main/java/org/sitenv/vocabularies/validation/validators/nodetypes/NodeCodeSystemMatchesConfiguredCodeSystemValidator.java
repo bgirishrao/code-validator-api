@@ -1,6 +1,6 @@
 package org.sitenv.vocabularies.validation.validators.nodetypes;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger; import org.apache.logging.log4j.LogManager;
 import org.sitenv.vocabularies.configuration.ConfiguredValidationResultSeverityLevel;
 import org.sitenv.vocabularies.configuration.ConfiguredValidator;
 import org.sitenv.vocabularies.validation.dto.NodeValidationResult;
@@ -21,7 +21,7 @@ import java.util.List;
 
 @Component(value = "NodeCodeSystemMatchesConfiguredCodeSystemValidator")
 public class NodeCodeSystemMatchesConfiguredCodeSystemValidator extends NodeValidator {
-    private static final Logger logger = Logger.getLogger(NodeCodeSystemMatchesConfiguredCodeSystemValidator.class);
+    private static final Logger logger = LogManager.getLogger(NodeCodeSystemMatchesConfiguredCodeSystemValidator.class);
 
     @Override
     public List<VocabularyValidationResult> validateNode(ConfiguredValidator configuredValidator, XPath xpath, Node node, int nodeIndex) {

@@ -1,7 +1,8 @@
 package org.sitenv.vocabularies.loader.code;
 
 import org.apache.commons.lang3.text.StrBuilder;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.sitenv.vocabularies.loader.BaseCodeLoader;
 import org.springframework.stereotype.Component;
 
@@ -18,7 +19,7 @@ import java.util.List;
  */
 @Component(value = "CPT")
 public class CptLoader extends BaseCodeLoader {
-    private static Logger logger = Logger.getLogger(CptLoader.class);
+    private static Logger logger = LogManager.getLogger(CptLoader.class);
     private String oid;
 
     public CptLoader() {
